@@ -1,0 +1,12 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+$primary: #000;
+$font: 'Roboto' san-serfi;
+$font-size: 18px;
+
+h1 {
+  font-size: $font-size;
+  color: red;
+}
