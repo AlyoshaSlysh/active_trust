@@ -1,33 +1,86 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Active Trust</title>
-  <link rel="stylesheet" href="scss/index.scss">
-  <script src="https://kit.fontawesome.com/e9d412d8b6.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Active Trust</title>
+    <link rel="stylesheet" href="../dist/css/index.min.css">
+    <script src="https://kit.fontawesome.com/e9d412d8b6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-  {% include "templates/_base/_header.html" %}
+    <header class="black_bac">
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="./images/logo.png" alt="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="is_active" href="#">Услуги</a>
+                    </li>
 
-  <main>
-    <h1 class="parent__item">Title</h1>
+                    <li>
+                        <a href="#">Портфолио</a>
+                    </li>
 
-    <a href="./second.html">second</a>
-  </main>
+                    <li>
+                        <a href="#">О компании</a>
+                    </li>
 
-  {% include "templates/_base/_footer.html" %}
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
 
-  <script src="./js/index.min.js"></script>
+                    <li>
+                        <a href="tel:84959688677">8 (495) 968-86-77</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="menu_main">
+                <button><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="black_bac">
+        <div class="banner container">
+            <div class="banner_text">
+
+                <h1>Digital–агентство</h1>
+
+                <div class="emblem">
+                    <img src="./images/mask_group.png" alt="Active Trust">
+                </div>
+
+                <p>это отлаженная машина по производству качественного контента для всех видов медиа бизнеса в любом
+                    формате: текстовом, аудио, видео, анимационном. </p>
+
+                <button>СВЯЗАТЬСЯ С НАМИ
+                    <div class="btn_blue_arrow">
+                        <img src="./images/Arrow_right.png" alt="arrow">
+                    </div>
+
+                    <div class="btn_blue">
+                        <img src="./images/image.png" alt="color">
+                    </div>
+
+                </button>
+            </div>
+            <div class="gif">
+                <img src="./images/rainbow_xl.png" alt="animation">
+            </div>
+        </div>
+    </div>
+
+    <script src="../dist/js/index.min.js"></script>
 </body>
 
 </html>

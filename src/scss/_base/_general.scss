@@ -1,12 +1,48 @@
-*, *::before, *::after {
-  box-sizing: border-box;
+$open_s: 'Open Sans';
+$montserrat: 'Montserrat';
+$black: #000000;
+$gray: #E1E8F4;
+$white: #FFFFFF;
+$text_gray: rgba(255, 255, 255, 0.6);
+
+img {
+  width: 100%;
 }
 
-$primary: #000;
-$font: 'Roboto' san-serfi;
-$font-size: 18px;
+.container {
+  max-width: 1230px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
+ 
+  @media (max-width: 1440px) {
+    max-width: 1230px;
+  } 
 
-h1 {
-  font-size: $font-size;
-  color: red;
+  @media (max-width: 1200px) {
+    max-width: 1170px;
+  }
+    
+    @media (max-width: 992px) {
+      max-width: 962px;
+    }
+    
+    @media (max-width: 768px) {
+      max-width: 738px;
+    }
+
+    @media (max-width: 576px) {
+      max-width: 546px;
+    }
+
+    @media (max-width: 352px) {
+      max-width: 322px;
+    }
+}
+
+.black_bac {
+  background-color: $black;
+}
+
+.gray_bac {
+ background-color: $gray;
 }
