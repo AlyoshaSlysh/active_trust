@@ -44,29 +44,59 @@
             margin: 5px 0 5px 5px;
         }
     }
+    
+    .swiper {
+      margin-top: -50px;
+    }
 
   .swiper-slide {
     display: flex;
-
-    h3 {
-      font-family: $open_s;
-      font-weight: 800;
-      font-size: 24px;
-      line-height: 24px;
-      color: #59A8FD;
-
-    }
+    margin-left: -10px;
+    margin-right: -10px;  
 
     .swiper_content {
-      background: $black;      
+      width: 285px;
+      padding: 15px 15px 30px 15px;
+      background: linear-gradient(100.74deg, #1C1C1C -7.06%, #0D0D0D 104.89%);
+      box-shadow: 0px 15px 20px rgba(23, 29, 38, 0.4);
+      border-radius: 5px;
+      margin: 10px;
+
+      h3 {
+            font-family: $open_s;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 24px;
+            color: #59A8FD;
+          }
+
+          .h {
+            font-weight: 700;
+          }
+        ul {
+          padding-left: 20px;
+          max-width: 255px;
+        }
+        
+        li {
+          font-family: $open_s;
+          font-size: 18px;
+          line-height: 20px;
+          color: $white;  
+          list-style-image: url("../images/arrow_li_.png");
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
     }
-    
-    li {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 20px;
-      color: $white;
-    }
+  }
+
+  .swiper_button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 26px;
+  }
+  .img_btn {
+    max-width: 45px;
   }
 }
