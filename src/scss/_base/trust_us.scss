@@ -6,54 +6,72 @@
         color: $black;
         margin-bottom: 46px;
     }
+    
+    b {
+        font-family: $montserrat;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+    }
 
     .qualities {
         padding-top: 100px;
         padding-bottom: 60px;
         display: flex;
+        justify-content: space-between;
+        border-bottom: 3px solid rgba(2, 123, 253, 0.25);
+    
+
+        p {
+            position: relative;
+            font-family: $montserrat;   
+            font-size: 18px;
+            line-height: 27px;
+            max-width: 227px;
+        }
+
+        .one::before {
+            position: absolute;
+            content: url(../images/1.png);
+            max-width: 66px;
+            margin-top: -90px;
+            margin-left: 5px;
+        }
+
+        .two::before {
+            position: absolute;
+            content: url(../images/2.png);
+            margin-top: -90px;
+            margin-left: 5px;
+        }
+
+        .three::before {
+            position: absolute;
+            content: url(../images/3.png);
+            margin-top: -90px;
+        }
+
+        .four::before {
+            position: absolute;
+            content: url(../images/4.png);
+            margin-top: -90px;
+            margin-left: 5px;
+        }
     }
 
-    p {
-        position: relative;
-        font-family: $montserrat;   
-        font-size: 18px;
-        line-height: 27px;
-        max-width: 227px;
-    }
+    .enefits {
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
 
-    b {
-        font-weight: 600;
-    }
+        b { grid-area: 1 / 1 / 2 / 2;
+            max-width: 518px;
+        }
 
-    .one::before {
-        position: absolute;
-        content: url(../images/1.png);
-        max-width: 66px;
-        margin-top: -90px;
-        margin-left: 5px;
+        b:last-child { grid-area: 1 / 2 / 2 / 3; }
     }
-
-    .two::before {
-        position: absolute;
-        content: url(../images/2.png);
-        max-width: 66px;
-        margin-top: -90px;
-        margin-left: 5px;
-    }
-
-    .three::before {
-        position: absolute;
-        content: url(../images/3.png);
-        max-width: 66px;
-        margin-top: -90px;
-        margin-left: 5px;
-    }
-
-    .four::before {
-        position: absolute;
-        content: url(../images/4.png);
-        max-width: 66px;
-        margin-top: -90px;
-        margin-left: 5px;
-    }
+        
 }

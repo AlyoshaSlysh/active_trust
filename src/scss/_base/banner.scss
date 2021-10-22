@@ -161,11 +161,9 @@
             margin-left: -20px;
             max-width: 46px;
             max-height: 46px;
-            border-radius: 20px;
-            z-index: 0;
 
             img {
-                border-radius: 8px;
+                border-radius: 3px;
             }
 
             @media (max-width: 992px) {

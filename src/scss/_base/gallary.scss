@@ -19,14 +19,9 @@
         transform: scale3d(2, 2, 2);
     }
     
-    h4 { grid-area: 1 / 1 / 2 / 2;
-        font-family: $open_s;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 32px;
-        line-height: 33px;
+    h4 { 
+        grid-area: 1 / 1 / 2 / 2;
         color: $white;
-        margin-top: 0;
     }
     
     .mot  { 
