@@ -54,3 +54,11 @@ h4 {
 .gray_bac {
  background-color: $gray;
 }
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.3;
+}
