@@ -4,11 +4,12 @@
 
     h4 {
         color: $black;
-        mb46px
+        margin-bottom: 46px;
     }
 
     .qualities {
-        padding: 100px;
+        padding-top: 100px;
+        padding-bottom: 60px;
         display: flex;
     }
 
@@ -26,7 +27,31 @@
 
     .one::before {
         position: absolute;
-        content: url(../images/1_1.png);
+        content: url(../images/1.png);
+        max-width: 66px;
+        margin-top: -90px;
+        margin-left: 5px;
+    }
+
+    .two::before {
+        position: absolute;
+        content: url(../images/2.png);
+        max-width: 66px;
+        margin-top: -90px;
+        margin-left: 5px;
+    }
+
+    .three::before {
+        position: absolute;
+        content: url(../images/3.png);
+        max-width: 66px;
+        margin-top: -90px;
+        margin-left: 5px;
+    }
+
+    .four::before {
+        position: absolute;
+        content: url(../images/4.png);
         max-width: 66px;
         margin-top: -90px;
         margin-left: 5px;
