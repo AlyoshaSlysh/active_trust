@@ -39,7 +39,7 @@ img {
   }
 
   @media (max-width: 352px) {
-  max-width: 322px;
+    max-width: 322px;
   }
 }
 
@@ -50,7 +50,28 @@ h4 {
   font-size: 32px;
   line-height: 33px;
   margin-top: 0;
+    
+  @media (max-width: 992px) {
+    font-size: 31px;
+    line-height: 32px;
+    }
+    
+  @media (max-width: 768px) {
+    font-size: 29px;
+    line-height: 31px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 27px;
+    line-height: 29px;
+  }
+
+  @media (max-width: 352px) {
+    font-size: 25px;
+    line-height: 27px;
+  }
 }
+
 .black_bac {
   background-color: $black;
 }

@@ -4,6 +4,10 @@
     color: $white;
     display: flex;
 
+    .banner_text {
+        max-width: 724px;
+    }
+
     @media (max-width: 992px) {
         padding-top: 35px;
         padding-bottom: 40px;
@@ -186,6 +190,11 @@
     }
     .gif {
         max-width: 425px;
+        width: 100%;
+        
+        source {
+            width: 100%;
+        }
 
         @media (max-width: 768px) {
             max-width: 200px;
