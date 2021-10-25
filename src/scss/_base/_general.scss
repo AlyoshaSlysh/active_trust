@@ -17,6 +17,21 @@ a {
   text-decoration: none;
 }
 
+.logo {
+  max-width: 183px;
+  margin-right: 10px;
+
+
+  @media (max-width: 920px) {
+      max-width: 153px;
+  
+  }
+
+  @media (max-width: 768px) {
+      max-width: 130px;
+  }
+}
+
 .container {
   max-width: 1230px;
   padding: 0 15px 0 15px;
@@ -79,6 +94,10 @@ h4 {
 .black_bac {
   background-color: $black;
   color: $white;
+  
+  a {
+    color: $white;
+  }
 }
 
 .gray_bac {

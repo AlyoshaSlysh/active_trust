@@ -180,10 +180,23 @@
     display: flex;
     justify-content: center;
     margin-bottom: 26px;
-  }
-  .img_btn {
-    max-width: 45px;
-    cursor: pointer;
-    margin-left: 10px;
+    gap: 10px;
+    font-size: 18px;
+    padding: 5px;
+
+    div {
+      position: relative;
+      margin-top: 0;
+      color: #027BFD;
+      border: 2px solid rgba(2, 123, 253, 0.5);
+      box-sizing: border-box;
+      border-radius: 3px;
+      right: 0;
+      left: 0;
+    }
+
+    .swiper-button-next:after, .swiper-rtl, .swiper-button-prev:after {
+      content: "";
+    }
   }
 }

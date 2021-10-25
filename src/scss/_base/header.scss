@@ -52,21 +52,6 @@ header .container {
         }
     }
 
-    .logo {
-        max-width: 183px;
-        margin-right: 10px;
-    
-
-        @media (max-width: 920px) {
-            max-width: 153px;
-        
-        }
-
-        @media (max-width: 768px) {
-            max-width: 130px;
-        }
-    }
-
     ul {
         display: flex;
         justify-content: space-between;

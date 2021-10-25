@@ -1,5 +1,68 @@
-footer .containet {
+footer .container {
     display: flex;
+    justify-content: space-between;
+    align-content: space-between;
     padding-top: 82px;
     padding-bottom: 78px;
+
+    .part {
+        max-width: 417px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+
+        .logo {
+            margin-bottom: 30px;
+        }
+
+        span {
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        a {
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        .end {
+            a {
+                font-weight: 600;
+            }
+        }
+        .span {
+            font-family: $open_s;
+            font-style: normal;
+            font-weight: normal;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+    }
+
+    .btn_footer {
+        min-width: 46px;
+        min-height: 46px;
+        background: #027BFD;
+        border-radius: 3px;
+        z-index: 0;
+    }
+
+    .download {
+       display: flex;
+       align-items: center;
+
+       .btn_blue_arrow {
+           max-width: 50px;
+           margin-left: 30px;
+           margin-right: -23px;
+           z-index: 1;
+       } 
+    }
 }
