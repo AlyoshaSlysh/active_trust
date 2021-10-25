@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
@@ -371,25 +371,66 @@
 
     <div class="gray_bac">
 
-        <div class="contacts container">
-            <h4>Наши контакты</h4>
+        <div class="feedback container">
+            <div class="contacts">
+                <h4>Наши контакты</h4>
 
-            <address>118280 г. Москва, ул Ленинская Слобода, д 19. БЦ “Омега Плаза”</address>
+                <address>118280 г. Москва, ул Ленинская Слобода, д 19. БЦ “Омега Плаза”</address>
 
-            <a href="tel:79199626235">+7(919) 962-62-35</a>
-            <a href="tel:84959688677">8 (495) 968-86-77</a>
+                <div class="tel">
+                    <a href="tel:79199626235">+7(919) 962-62-35</a>
+                    <a href="tel:84959688677">8 (495) 968-86-77</a>
+                </div>
 
-            <a href="#">info@active-trust.com</a>
+                <a href="#">info@active-trust.com</a>
+
+                <div class="icons">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                </div>
+            </div>
+
+            <div class="application">
+                <h5>Оставьте заявку</h6>
+                    <p>И мы свяжемся с вами в течение 30 минут</p>
+                    <form action="">
+                        <input type="text" required name="name" placeholder="Имя *">
+                        <input type="text" required name="tel" placeholder="Телефон *">
+                        <input type="text" required name="mail" placeholder="E-mail">
+                        <button>Отправить заявку <img src="./images/arrow_li_.png" alt="arrow"></button>
+                        <p>Нажимая на кнопку Вы соглашаетесь с политикой конфиденциальности </p>
+                    </form>
+            </div>
         </div>
-
-        <form action="">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <button></button>
-        </form>
     </div>
 
+    <footer class="black_bac">
+        <div class="container">
+            <div>
+                <div class="logo">
+                    <a href="/"><img src="./images/logo.png" alt="logo"></a>
+                </div>
+
+                <span>ИНН: 9725042364</span>
+                <span>ОГРН: 1207700506562</span>
+            </div>
+
+            <ul>
+                <li>Маркетинг </li>
+                <li>Программирование </li>
+                <li>Дизайн</li>
+                <li>Копирайтинг</li>
+                <li>Мультмедиа</li>
+            </ul>
+
+            <div>
+                <a href="./images/mot_.jpg" download="" title="картинка"></a>
+            </div>
+        </div>
+    </footer>
     <script src="./js/index.min.js"></script>
 </body>
 

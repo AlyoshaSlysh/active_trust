@@ -1,5 +1,5 @@
 $open_s: 'Open Sans';
-$montserrat: 'Montserrat';
+$montserrat: 'Montserrat', sans-serif;
 $black: #000000;
 $gray: #E1E8F4;
 $white: #FFFFFF;
@@ -11,6 +11,10 @@ body {
 
 img {
   width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -74,6 +78,7 @@ h4 {
 
 .black_bac {
   background-color: $black;
+  color: $white;
 }
 
 .gray_bac {
