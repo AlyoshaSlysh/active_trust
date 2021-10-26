@@ -15,47 +15,58 @@
     }
 
     .qualities {
-        padding-top: 100px;
         padding-bottom: 60px;
         display: flex;
         justify-content: space-between;
         border-bottom: 3px solid rgba(2, 123, 253, 0.25);
     
-
-        p {
-            position: relative;
-            font-family: $montserrat;   
-            font-size: 18px;
-            line-height: 27px;
-            max-width: 227px;
-        }
-
-        .one::before {
-            position: absolute;
-            content: url(../images/1.png);
-            max-width: 66px;
-            margin-top: -90px;
+        .namber {
             margin-left: 5px;
-        }
 
-        .two::before {
-            position: absolute;
-            content: url(../images/2.png);
-            margin-top: -90px;
-            margin-left: 5px;
-        }
+            p {
+                position: relative;
+                font-family: $montserrat;   
+                font-size: 18px;
+                line-height: 27px;
+                max-width: 227px;
+                margin-top: -40px;
+            }
 
-        .three::before {
-            position: absolute;
-            content: url(../images/3.png);
-            margin-top: -90px;
-        }
+            // .one::before {
+            //     position: absolute;
+            //     content: url(../images/1.png);
+            //     max-width: 66px;
+            //     margin-top: -90px;
+            //     margin-left: 5px;
+            // }
 
-        .four::before {
-            position: absolute;
-            content: url(../images/4.png);
-            margin-top: -90px;
-            margin-left: 5px;
+            // .two::before {
+            //     position: absolute;
+            //     content: url(../images/2.png);
+            //     margin-top: -90px;
+            //     margin-left: 5px;
+            // }
+
+            // .three::before {
+            //     position: absolute;
+            //     content: url(../images/3.png);
+            //     margin-top: -90px;
+            // }
+
+            // .four::before {
+            //     position: absolute;
+            //     content: url(../images/4.png);
+            //     margin-top: -90px;
+            //     margin-left: 5px;
+            // }
+            span {
+                font-family: 'Paytone One';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 144px;
+                line-height: 147px;
+                color: rgba(2, 123, 253, 0.15);
+            }
         }
     }
 
