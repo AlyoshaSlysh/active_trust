@@ -44,12 +44,16 @@
             margin: 5px 0 5px 5px;
         }
     }
+    .our_services {
+      margin-left: -15px;
+    }
     
     h2 {
       font-family: $open_s;
       font-weight: 800;
       font-size: 32px;
       line-height: 33px;
+      margin-left: 10px;
 
       @media (max-width: 1050px) {
         font-size: 30px;
@@ -86,6 +90,7 @@
   .swiper-slide {
     display: flex;
     justify-content: space-between;
+    margin-left: 15px;
 
     .swiper_content {
       width: 285px;
@@ -93,7 +98,7 @@
       background: linear-gradient(100.74deg, #1C1C1C -7.06%, #0D0D0D 104.89%);
       box-shadow: 0px 15px 20px rgba(23, 29, 38, 0.4);
       border-radius: 5px;
-      margin: 5px;
+      margin: 0 10px 30px 10px;
 
       h3 {
             font-family: $open_s;

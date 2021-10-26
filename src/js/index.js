@@ -6,8 +6,6 @@ $(document).ready(function () {
     console.log("ready!");
 
     const swiper = new Swiper('.mySwiper', {
-        loop: true,
-
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
