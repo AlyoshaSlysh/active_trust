@@ -188,12 +188,17 @@
       padding: 18px 21px 19px 20px;
       position: relative;
       margin-top: 0;
-      color: #027BFD;
+      color: rgba(2, 123, 253, 0.5);
       border: 2px solid rgba(2, 123, 253, 0.5);
       box-sizing: border-box;
       border-radius: 3px;
       right: 0;
       left: 0;
+    }
+
+    div:hover {
+      background: #027BFD;
+      color: $white;
     }
 
     .swiper-button-next:after, .swiper-rtl, .swiper-button-prev:after {
