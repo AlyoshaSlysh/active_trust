@@ -17,14 +17,15 @@
     .qualities {
         padding-bottom: 60px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         border-bottom: 3px solid rgba(2, 123, 253, 0.25);
     
         .namber {
             margin-left: 5px;
+            min-width: 230px;
 
             p {
-                position: relative;
                 font-family: $montserrat;   
                 font-size: 18px;
                 line-height: 27px;
@@ -32,33 +33,6 @@
                 margin-top: -40px;
             }
 
-            // .one::before {
-            //     position: absolute;
-            //     content: url(../images/1.png);
-            //     max-width: 66px;
-            //     margin-top: -90px;
-            //     margin-left: 5px;
-            // }
-
-            // .two::before {
-            //     position: absolute;
-            //     content: url(../images/2.png);
-            //     margin-top: -90px;
-            //     margin-left: 5px;
-            // }
-
-            // .three::before {
-            //     position: absolute;
-            //     content: url(../images/3.png);
-            //     margin-top: -90px;
-            // }
-
-            // .four::before {
-            //     position: absolute;
-            //     content: url(../images/4.png);
-            //     margin-top: -90px;
-            //     margin-left: 5px;
-            // }
             span {
                 font-family: 'Paytone One';
                 font-style: normal;
@@ -72,17 +46,142 @@
 
     .enefits {
         padding-top: 60px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 70px;
+        gap: 40px;
 
-        b { grid-area: 1 / 1 / 2 / 2;
-            max-width: 518px;
+        b {
+           max-width: 518px;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        padding-top: 85px;
+        padding-bottom: 85px;
+
+        h4 {
+            margin-bottom: 20px;
         }
 
-        b:last-child { grid-area: 1 / 2 / 2 / 3; }
+        .qualities {
+            padding-bottom: 50px;
+
+            .namber {
+                span {
+                    font-size: 130px;
+                    line-height: 100px;
+                }
+
+                p {
+                    font-family: $montserrat;   
+                    font-size: 16px;
+                    line-height: 25px;
+                    margin-top: -45px;                   
+                }
+            }
+        }
+
+        .enefits {
+            padding-right: 0;
+        }
+
+        b {
+            font-size: 16px;
+            line-height: 25px;
+        }
     }
+
+    @media (max-width: 768px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        h4 {
+            margin-bottom: 0;
+        }
         
+        .qualities {
+            padding-bottom: 30px;
+
+            .namber {
+                span {
+                    font-size: 128px;
+                    line-height: 86px;
+                }
+
+                p {
+                    font-size: 15px;
+                    line-height: 24px;
+                    margin-top: -50px;                    
+                }
+            }
+        }    
+        
+        b {
+            font-size: 15px;
+            line-height: 24px;
+        }        
+
+        .enefits {
+            padding-top: 40px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        h4 {
+            margin-bottom: 15px;
+        }
+
+        .qualities {
+            justify-content: center;
+            padding-bottom: 10px;
+
+            .namber {
+                p {
+                    font-size: 14px;
+                    line-height: 23px;                    
+                }
+            }
+        }
+            
+        b {
+            font-size: 14px;
+            line-height: 23px;
+        }
+        
+
+        .enefits {
+            padding-top: 25px;
+            flex-wrap: wrap;
+        }
+    }
+
+    @media (max-width: 352px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+        .qualities {
+            padding-bottom: 0;
+
+            .namber {
+                p {
+                    font-size: 13px;
+                    line-height: 22px;                    
+                }
+            }
+        }
+
+        b {
+            font-size: 13px;
+            line-height: 22px;
+        }
+    
+
+        .enefits {
+            padding-top: 10px;
+        }
+    }
 }

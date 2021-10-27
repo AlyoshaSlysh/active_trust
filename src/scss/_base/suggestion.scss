@@ -1,6 +1,6 @@
 .suggestions.container {
     padding-top: 20px;
-    padding-bottom: 100px;    
+    padding-bottom: 65px;    
 
 
     .description {
@@ -40,6 +40,7 @@
         }
 
         .img_computers {
+            min-width: 230px;
             max-width: 411px;
             margin: 5px 0 5px 5px;
         }
@@ -53,7 +54,7 @@
       font-weight: 800;
       font-size: 32px;
       line-height: 33px;
-      margin-left: 10px;
+      margin-left: 15px;
 
       @media (max-width: 1050px) {
         font-size: 30px;
@@ -83,103 +84,118 @@
 
   .swiper-wrapper {
     gap: 10px;
-    margin-left: -10px;
     margin-right: -10px; 
+    
+      .swiper-slide {
+        max-width: 1230px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+        gap: 10px;
+    
+        .swiper_content {
+          width: 285px;
+          padding: 15px 15px 30px 15px;
+          background: linear-gradient(100.74deg, #1C1C1C -7.06%, #0D0D0D 104.89%);
+          box-shadow: 0px 15px 20px rgba(23, 29, 38, 0.4);
+          border-radius: 5px;
+          margin-bottom: 35px;
+    
+          h3 {
+                font-family: $open_s;
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 24px;
+                color: #59A8FD;
+              }
+    
+              .h {
+                font-weight: 700;
+              }
+          
+          ul {
+            padding-left: 20px;
+            width: 235px;
+          }
+            
+          li {
+            font-family: $open_s;
+            font-size: 18px;
+            line-height: 20px;
+            color: $white;  
+            list-style-image: url("../images/arrow_li_.png");
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+        }
+
+      @media (max-width: 1120px) {
+        flex-wrap: wrap;        
+      }
+
+      @media (max-width: 1002px) {
+        flex-wrap: wrap;
+        justify-content: center;
+
+          h3 {
+            font-size: 22px;
+            line-height: 22px;
+          }
+    
+          li {
+            font-size: 17px;
+            line-height: 19px;
+          }
+      }
+          
+      @media (max-width: 768px) {
+          width: 255px;
+          padding: 10px 10px 25px 10px;
+          margin-left: 0;
+    
+          h3 {
+            font-size: 22px;
+            line-height: 22px;
+          }
+    
+          li {
+            font-size: 16px;
+            line-height: 18px;
+          }
+      }
+      
+      @media (max-width: 576px) {
+          h3 {
+            font-size: 20px;
+            line-height: 20px;
+          }
+    
+          li {
+            font-size: 15px;
+            line-height: 17px;
+          }
+      }
+    
+      @media (max-width: 352px) {
+          h3 {
+            font-size: 20px;
+            line-height: 20px;
+          }
+    
+          li {
+            font-size: 14px;
+            line-height: 16px;
+          }
+      }
+    
+       
+    }
+
+    .two {
+      margin-left: -6px;
+    }
   }
 
-  .swiper-slide {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 15px;
-
-    .swiper_content {
-      width: 285px;
-      padding: 15px 15px 30px 15px;
-      background: linear-gradient(100.74deg, #1C1C1C -7.06%, #0D0D0D 104.89%);
-      box-shadow: 0px 15px 20px rgba(23, 29, 38, 0.4);
-      border-radius: 5px;
-      margin: 0 10px 30px 10px;
-
-      h3 {
-            font-family: $open_s;
-            font-weight: 800;
-            font-size: 24px;
-            line-height: 24px;
-            color: #59A8FD;
-          }
-
-          .h {
-            font-weight: 700;
-          }
-      
-      ul {
-        padding-left: 20px;
-        width: 235px;
-      }
-        
-      li {
-        font-family: $open_s;
-        font-size: 18px;
-        line-height: 20px;
-        color: $white;  
-        list-style-image: url("../images/arrow_li_.png");
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-
-    @media (max-width: 992px) {
-      h3 {
-        font-size: 22px;
-        line-height: 22px;
-      }
-
-      li {
-        font-size: 17px;
-        line-height: 19px;
-      }
-    }
-      
-    @media (max-width: 768px) {
-      width: 255px;
-      padding: 10px 10px 25px 10px;
-
-      h3 {
-        font-size: 22px;
-        line-height: 22px;
-      }
-
-      li {
-        font-size: 16px;
-        line-height: 18px;
-      }
-    }
-  
-    @media (max-width: 576px) {
-      h3 {
-        font-size: 20px;
-        line-height: 20px;
-      }
-
-      li {
-        font-size: 15px;
-        line-height: 17px;
-      }
-    }
-
-    @media (max-width: 352px) {
-      h3 {
-        font-size: 20px;
-        line-height: 20px;
-      }
-
-      li {
-        font-size: 14px;
-        line-height: 16px;
-      }
-    }
-
-  } 
-}
 
   .swiper_button {
     display: flex;
@@ -199,6 +215,14 @@
       border-radius: 3px;
       right: 0;
       left: 0;
+
+      @media (max-width: 1020px) {
+        padding: 16px 19px 17px 18px;
+      }
+
+      @media (max-width: 960) {
+        padding: 15px 18px 16px 18px;
+      }
     }
 
     div:hover {
