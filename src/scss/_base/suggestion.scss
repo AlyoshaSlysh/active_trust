@@ -4,47 +4,48 @@
 
 
     .description {
-        display: flex;
-        align-items: center;
+      display: flex;
+      align-items: center;
 
-        p {
-            max-width: 740px;
-            font-family: $montserrat;         
-            font-size: 20px;
-            line-height: 30px;
+      p {
+        max-width: 740px;
+        font-family: $montserrat;         
+        font-size: 20px;
+        line-height: 30px;
+        
+        b {
+          font-weight: 700;
+          text-transform: uppercase;
+        }
 
-            b {
-                font-weight: 700;
-                text-transform: uppercase;
-            }
-
-            @media (max-width: 992px) {
-                font-size: 19px;
-                line-height: 28px;
-                }
+        @media (max-width: 992px) {
+          font-size: 19px;
+          line-height: 28px;
+        }
                 
-              @media (max-width: 768px) {
-                font-size: 17px;
-                line-height: 26px;
-              }
-            
-              @media (max-width: 576px) {
-                font-size: 15px;
-                line-height: 22px;
-              }
-            
-              @media (max-width: 352px) {
-                font-size: 13px;
-                line-height: 19px;
-              }
+        @media (max-width: 768px) {
+          font-size: 17px;
+          line-height: 26px;
         }
+            
+        @media (max-width: 576px) {
+          font-size: 15px;
+          line-height: 22px;
+        }
+            
+        @media (max-width: 352px) {
+          font-size: 13px;
+          line-height: 19px;
+        }
+      }
 
-        .img_computers {
-            min-width: 230px;
-            max-width: 411px;
-            margin: 5px 0 5px 5px;
-        }
+      .img_computers {
+        min-width: 230px;
+        max-width: 411px;
+        margin: 5px 0 5px 5px;
+      }
     }
+
     .our_services {
       margin-left: -15px;
     }
@@ -87,109 +88,105 @@
     gap: 10px;
     margin-right: -10px; 
     
-      .swiper-slide {
-        max-width: 1230px;
-        display: flex;
-        justify-content: space-between;
-        margin-left: 15px;
-        gap: 10px;
+    .swiper-slide {
+      max-width: 1230px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 15px;
+      gap: 10px;
     
-        .swiper_content {
-          width: 285px;
-          padding: 15px 15px 30px 15px;
-          background: linear-gradient(100.74deg, #1C1C1C -7.06%, #0D0D0D 104.89%);
-          box-shadow: 0px 15px 20px rgba(23, 29, 38, 0.4);
-          border-radius: 5px;
-          margin-bottom: 35px;
+      .swiper_content {
+        width: 285px;
+        padding: 15px 15px 30px 15px;
+        background: linear-gradient(100.74deg, #1C1C1C -7.06%, #0D0D0D 104.89%);
+        box-shadow: 0px 15px 20px rgba(23, 29, 38, 0.4);
+        border-radius: 5px;
+        margin-bottom: 35px;
     
-          h3 {
-                font-family: $open_s;
-                font-weight: 800;
-                font-size: 24px;
-                line-height: 24px;
-                color: #59A8FD;
-              }
-    
-              .h {
-                font-weight: 700;
-              }
-          
-          ul {
-            padding-left: 20px;
-            width: 235px;
-          }
-            
-          li {
-            font-family: $open_s;
-            font-size: 18px;
-            line-height: 20px;
-            color: $white;  
-            list-style-image: url("../images/arrow_li_.png");
-            margin-top: 10px;
-            margin-bottom: 10px;
-          }
+        h3 {
+          font-family: $open_s;
+          font-weight: 800;
+          font-size: 24px;
+          line-height: 24px;
+          color: #59A8FD;
         }
+    
+        .h {
+          font-weight: 700;
+        }
+          
+        ul {
+          padding-left: 20px;
+          width: 235px;
+        }
+          
+        li {
+          font-family: $open_s;
+          font-size: 18px;
+          line-height: 20px;
+          color: $white;  
+          list-style-image: url("../images/arrow_li_.png");
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
 
       @media (max-width: 1120px) {
         flex-wrap: wrap;        
+        justify-content: center;
       }
 
       @media (max-width: 1002px) {
-        flex-wrap: wrap;
-        justify-content: center;
-
-          h3 {
-            font-size: 22px;
-            line-height: 22px;
-          }
+        h3 {
+          font-size: 22px;
+          line-height: 22px;
+        }
     
-          li {
-            font-size: 17px;
-            line-height: 19px;
-          }
+        li {
+          font-size: 17px;
+          line-height: 19px;
+        }
       }
           
       @media (max-width: 768px) {
-          width: 255px;
-          padding: 10px 10px 25px 10px;
-          margin-left: 0;
+        width: 255px;
+        padding: 10px 10px 25px 10px;
+        margin-left: 0;
+  
+        h3 {
+          font-size: 22px;
+          line-height: 22px;
+        }
     
-          h3 {
-            font-size: 22px;
-            line-height: 22px;
-          }
-    
-          li {
-            font-size: 16px;
-            line-height: 18px;
-          }
+        li {
+          font-size: 16px;
+          line-height: 18px;
+        }
       }
       
       @media (max-width: 576px) {
-          h3 {
-            font-size: 20px;
-            line-height: 20px;
-          }
+        h3 {
+          font-size: 20px;
+          line-height: 20px;
+        }
     
-          li {
-            font-size: 15px;
-            line-height: 17px;
-          }
+        li {
+          font-size: 15px;
+          line-height: 17px;
+        }
       }
     
       @media (max-width: 352px) {
-          h3 {
-            font-size: 20px;
-            line-height: 20px;
-          }
+        h3 {
+          font-size: 20px;
+          line-height: 20px;
+        }
     
-          li {
-            font-size: 14px;
-            line-height: 16px;
-          }
+        li {
+          font-size: 14px;
+          line-height: 16px;
+        }
       }
-    
-       
     }
 
     .two {
