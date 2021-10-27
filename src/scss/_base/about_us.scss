@@ -118,6 +118,9 @@
             line-height: 32px;
         }
         
+        .width {
+            min-width: 300px;
+        }
     }
 
     @media (max-width: 352px) {

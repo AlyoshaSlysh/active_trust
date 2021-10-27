@@ -1,13 +1,14 @@
 .feedback {
-
     font-family: $montserrat;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 100px;
     padding-bottom: 100px;
-
+    
     .contacts {
         font-family: $montserrat;
+        gap: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -35,6 +36,10 @@
             font-weight: 600;
             font-size: 24px;
             line-height: 39px;
+
+            @media (max-width: 1100px) {
+                display: block;
+            }
         }
 
         a {
@@ -42,7 +47,8 @@
             font-weight: 500;
             font-size: 20px;
             line-height: 32px;
-                }
+        }
+
         .icons {
             max-width: 186px;
             display: flex;
@@ -63,11 +69,14 @@
     }
 
     .application {
+        max-width: 591px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         background: linear-gradient(100.74deg, #1C1C1C -7.06%, #0D0D0D 104.89%);
         box-shadow: 0px 15px 20px rgba(23, 29, 38, 0.4);
         border-radius: 5px;
         color: $white;
-        text-align: center;
         padding: 46px 95px 46px 96px;
 
         h5 {
@@ -135,6 +144,285 @@
                 font-size: 14px;
                 line-height: 17px;
                 color: rgba(255, 255, 255, 0.7);
+            }
+        }
+    }
+
+    @media (max-width: 1100px) {
+        justify-content: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        .contacts {
+            h4 {
+                line-height: 33px;
+            }
+
+            address {
+                font-size: 18px;
+                line-height: 28px;    
+            }
+
+            .tel a {
+                display: block;
+                font-size: 22px;
+                line-height: 37px;
+            }
+
+            a {
+                font-size: 18px;
+                line-height: 30px;
+            }
+
+            .icons {
+                max-width: 146px;
+                a {
+                    width: 34px;
+                    height: 34px;
+                }
+                
+                i {
+                    font-size: 34px;
+                }
+            }
+        }
+        
+        .application {
+            min-width: 345px;
+            padding: 31px 30px 31px 31px;
+
+            h5 {
+                font-size: 22px;
+                line-height: 34px;
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 25px;
+            }
+    
+            form {
+                padding-top: 15px;
+    
+                input {
+                    padding: 15px 25px;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+    
+                button {
+                    padding-top: 10px;
+                    padding-bottom: 11px;
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+
+                p {
+                    font-size: 13px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
+        .contacts {
+            h4 {
+                line-height: 31px;
+            }
+
+            address {
+                font-size: 16px;
+                line-height: 26px;    
+            }
+
+            .tel a {
+                font-size: 20px;
+                line-height: 35px;
+            }
+
+            a {
+                font-size: 16px;
+                line-height: 28px;
+            }
+
+            .icons {
+                a {
+                    width: 32px;
+                    height: 32px;
+                }
+                
+                i {
+                    font-size: 32px;
+                }
+            }
+        }
+
+        .application {
+            h5 {
+                font-size: 20px;
+                line-height: 32px;
+            }
+    
+            p {
+                font-size: 14px;
+                line-height: 23px;
+            }
+    
+            form {
+                input {
+                    padding: 13px 20px;
+                    font-size: 13px;
+                    line-height: 23px;
+                }
+    
+                button {
+                    padding-bottom: 10px;
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+
+                p {
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 35px;
+        padding-bottom: 35px;
+
+        .contacts {
+            h4 {
+                line-height: 29px;
+            }
+
+            address {
+                font-size: 15px;
+                line-height: 25px;    
+            }
+
+            .tel a {
+                font-size: 18px;
+                line-height: 33px;
+            }
+
+            a {
+                font-size: 14px;
+                line-height: 26px;
+            }
+
+            .icons {
+                a {
+                    width: 30px;
+                    height: 30px;
+                }
+                
+                i {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .application {
+            min-width: 270px;
+            padding: 15px 30px 15px 31px;
+
+            h5 {
+                font-size: 18px;
+                line-height: 30px;
+            }
+    
+            p {
+                font-size: 13px;
+                line-height: 22px;
+            }
+    
+            form {
+                input {
+                    padding: 10px 15px;
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+    
+                button {
+                    font-size: 14px;
+                    line-height: 23px;
+                }
+
+                p {
+                    font-size: 11px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 352px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .contacts {
+            h4 {
+                line-height: 27px;
+            }
+
+            address {
+                font-size: 14px;
+                line-height: 24px;    
+            }
+
+            .tel a {
+                font-size: 16px;
+                line-height: 31px;
+            }
+
+            a {
+                font-size: 12px;
+                line-height: 24px;
+            }
+
+            .icons {
+                a {
+                    width: 28px;
+                    height: 28px;
+                }
+                
+                i {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        h5 {
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        form {
+            input {
+                font-size: 11px;
+                line-height: 21px;
+            }
+
+            button {
+                font-size: 13px;
+                line-height: 22px;
+            }
+
+            p {
+                font-size: 10px;
+                line-height: 13px;
             }
         }
     }
